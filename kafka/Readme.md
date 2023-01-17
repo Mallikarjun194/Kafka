@@ -18,3 +18,14 @@ Steps:
 
 4. Read from kafka:
    >> ./bin/kafka-console-consumer.sh --topic my-topic --from-beginning --bootstrap-server localhost:9092
+   
+5. To run kafka-confluent using docker:
+   ###### Go to producer directory run following:
+   >> docker build -t k-producer:latest .
+
+   >> docker run -it k-producer
+   #####
+   ###### Go to consumer directory run following:
+   >> docker build -t k-consumer:latest .
+
+   >> docker run -it k-consumer
